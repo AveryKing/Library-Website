@@ -1,7 +1,7 @@
 const bookFunctions = require('./books')
 
 const findAccountById = (accounts, id) =>
-    accounts.find(account => account.id === id)
+    accounts.filter(account => account.id === id)[0]
 
 
 const sortAccountsByLastName = (accounts) => {
